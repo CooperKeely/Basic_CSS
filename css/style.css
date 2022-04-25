@@ -1,0 +1,121 @@
+* {
+  font-family: Verdana;
+  font-size: 24px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: 
+    'A B'
+    'C D';
+}
+
+h1{
+  text-align: center;
+  font-size: 2em;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+p{
+  margin: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: blue;
+}
+
+figure{
+  border-radius: 1em;
+  padding: 10px;
+  background-color: #71c2d0;
+}
+img{
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+figcaption{
+  padding: 1em;
+  margin: 10px;
+  border-radius: 1em;
+  text-align: center;
+  background-color: #CDEEF4;
+}
+
+form{
+  display: inline-block;
+}
+
+input[type=text]:focus{
+  background-color: #CDEEF4;
+}
+fieldset{}
+legend{
+  background-color: black;
+  color: white;
+}
+article{
+  grid-area: W;
+}
+
+ol{
+  margin: 1em;
+}
+table{
+  margin: 2em;
+}
+
+td{
+  margin: 10px;
+}
+thead{
+  text-align: center;
+  margin: 10px;
+}
+li{
+  margin: 5px;
+}
+
+hr{
+  border: none;
+  background-color: black;
+  height: 2px;
+}
+#footer{
+  text-align: right;
+  margin: 2em
+}
+#side-notes{
+  grid-area: B;
+  text-align: center;
+  
+  border-radius: 1em;
+}
+#image{
+  grid-area: A;
+}
+#ingredients{
+  grid-area: C;
+}
+#directions{
+  grid-area: D;
+}
+.content{
+  border-radius: 1em;
+  text-align: center;
+  height: fit-content;
+  margin: 1em;
+  padding: 0.5em;
+}
